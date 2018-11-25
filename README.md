@@ -27,15 +27,15 @@ ___
 pip install ortools
 ```
 ### The following section represent python program that solves the obove mentioned problem.  
-Create the data
 
-The data for the problem: the lovcations and the distance matrix, whose entry in row i and column j is the distance from location i to location j in km.
+
+The data for the problem: the lovcations and the distance matrix, whose entry in row i and column j is the distance from location i to location j in km. The figure shows the distance matrix between each location.
 <img src="DATA.png" width="600">
 
 
 ### The following code declares an instance of the solver and sets the default options for it.
 ```
-  tsp_size = len(city_names)
+  tsp_size = len(address_names)
   num_routes = 1
   depot = 0
 
@@ -47,3 +47,8 @@ The data for the problem: the lovcations and the distance matrix, whose entry in
     dist_callback = create_distance_callback(dist_matrix)
     routing.SetArcCostEvaluatorOfAllVehicles(dist_callback)
 ```
+The instance solver is declared by 
+```
+routing = pywrapcp.RoutingModel(tsp_size, num_routes, depot)
+```
+
