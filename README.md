@@ -31,3 +31,19 @@ Create the data
 
 The data for the problem: the lovcations and the distance matrix, whose entry in row i and column j is the distance from location i to location j in km.
 <img src="DATA.png" width="600">
+
+
+### The following code declares an instance of the solver and sets the default options for it.
+```
+  tsp_size = len(city_names)
+  num_routes = 1
+  depot = 0
+
+  # Create routing model
+  if tsp_size > 0:
+    routing = pywrapcp.RoutingModel(tsp_size, num_routes, depot)
+    search_parameters = pywrapcp.RoutingModel.DefaultSearchParameters()
+    # Create the distance callback.
+    dist_callback = create_distance_callback(dist_matrix)
+    routing.SetArcCostEvaluatorOfAllVehicles(dist_callback)
+```
