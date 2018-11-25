@@ -67,8 +67,9 @@ def create_distance_callback(dist_matrix):
 ```
 For a pair of locations, whose indices in the distance matrix are from_node and to_node, the callback accepts the two indices and returns the corresponding entry of the distance matrix. This is checke for all the route combinationation for each selected node.
 
-## running the program
+## Running the program
 
 After running the tsp ipython notebook scrip, the main function returns the optimal route in terms of distance and the locations in optimal route pattern. The figure below shows the optimal route pattern.![img](SP.png) 
 
+The travelling salesman simulated results for the optimal route acheive an optimal distance and of 891km 9h 37 min, respectively. When the optimal route was traced on Google Map achieve an optimal route distance and time of about 847km and 10h 9min. 
 
