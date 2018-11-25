@@ -29,13 +29,6 @@ pip install ortools
 ### The following section represent python program that solves the obove mentioned problem. 
 
 
-
-    tsp_size—The number of locations needed to be visited.
-    num_routes—The number of routes, which is 1 for a TSP.
-    depot—The start and end node of the route.
-
-
-
 The data for the problem: the lovcations and the distance matrix, whose entry in row i and column j is the distance from location i to location j in km. The figure shows the distance matrix between each location.
 <img src="DATA.png" width="600">
 
@@ -58,4 +51,6 @@ The instance solver is declared by
 ```
 routing = pywrapcp.RoutingModel(tsp_size, num_routes, depot)
 ```
-
+    tsp_size—The number of locations needed to be visited.
+    num_routes—The number of routes, which is 1 for a TSP.
+    depot—The start and end node of the route.
