@@ -55,4 +55,20 @@ routing = pywrapcp.RoutingModel(tsp_size, num_routes, depot)
    # num_routes—The number of routes, which is 1 for a TSP.
    #  depot—The start and end node of the route.
 ```
+The following funstion is distance call back which calculates the distance between two locations. It then returns the calculated distance call back to the solver.
+```
+def create_distance_callback(dist_matrix):
+  # Create a callback to calculate distances between cities.
+
+  def distance_callback(from_node, to_node):
+    return int(dist_matrix[from_node][to_node])
+
+  return distance_callback
+```
+For a pair of locations, whose indices in the distance matrix are from_node and to_node, the callback accepts the two indices and returns the corresponding entry of the distance matrix. This is checke for all the route combinationation for each selected node.
+
+## running the program
+
+After running the tsp ipython notebook scrip, the main function returns the optimal route in terms of distance and the locations in optimal route pattern. The figure below shows the optimal route pattern. 
+
 
