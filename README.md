@@ -13,5 +13,5 @@ Informally, you have a delivery driver who wants to visit a number of delivery a
 
 An exhaustive search of all possible paths would be guaranteed to find the shortest, but is computationally intractable for all but small sets of locations. For larger problems, optimization techniques are needed to intelligently search the solution space and find near-optimal solutions.
 
-{:.center}
-![img](tsp.png)
+
+                                             ![img](tsp.png)
