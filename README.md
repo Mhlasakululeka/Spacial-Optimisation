@@ -73,3 +73,7 @@ After running the tsp ipython notebook scrip, the main function returns the opti
 
 The travelling salesman simulated results for the optimal route acheive an optimal distance and of 891km 9h 37 min, respectively. When the optimal route was traced on Google Map achieve an optimal route distance and time of about 892km and 10h 9min. 
 
+# Credits
+
+[Google OR-Tools](https://developers.google.com)
+
