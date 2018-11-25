@@ -17,4 +17,8 @@ An exhaustive search of all possible paths would be guaranteed to find the short
 ## Travelling Salesman Problem
 The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city ? Wesolve the above mentioned sptial optimisation problem by using this approach
 
+##  Solving TSPs with OR-Tools
+You can solve TSPs using the OR-Tools vehicle routing library, a collection of algorithms designed especially for TSPs, and more general problems with multiple vehicles. The routing library is an added layer on top of the constraint programming solver. See RoutingModel for detailed information about the available methods for setting up and solving routing problems.
+[r2h]: http://github.com/github/markup/tree/master/lib/github/commands/rest2html
 
+## Installation
