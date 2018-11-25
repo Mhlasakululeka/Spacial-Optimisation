@@ -1,5 +1,5 @@
 
-# Spacial-Optimisation Problem
+# Spatial Optimisation Problem
 
 
 Formally, the problem asks to find the optimal time (minimum time) route between different locations in KwaZulu Natal.The locations are as folllow:
@@ -15,6 +15,6 @@ Informally, you have a delivery driver who wants to visit a number of delivery a
 An exhaustive search of all possible paths would be guaranteed to find the shortest, but is computationally intractable for all but small sets of locations. For larger problems, optimization techniques are needed to intelligently search the solution space and find near-optimal solutions.![img](tsp.png) 
 
 ## Travelling Salesman Problem
-The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city ?
+The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city ? Wesolve the above mentioned sptial optimisation problem by using this approach
 
-pyTSP uses various approaches to solve the TSP (linear programming, construction heuristics, optimization heuristics, genetic algorithm). It provides a geographical step-by-step visualization of each of these algorithms.
+
