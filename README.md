@@ -26,7 +26,7 @@ ___
 ```
 pip install ortools
 ```
-### The following section represent python program that solves the obove mentioned problem.
+### The following section represent python program that solves the obove mentioned problem.  
 Create the data
 
 The data for the problem: the lovcations and the distance matrix, whose entry in row i and column j is the distance from location i to location j in km.<img src="DATA.png" width="600">
