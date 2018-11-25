@@ -29,4 +29,4 @@ pip install ortools
 ### The following section represent python program that solves the obove mentioned problem.
 Create the data
 
-The code shown below creates the data for the problem: the cities and the distance matrix, whose entry in row i and column j is the distance from city i to city j in miles.![img](DATA.png)
+The code shown below creates the data for the problem: the cities and the distance matrix, whose entry in row i and column j is the distance from city i to city j in miles.![img](DATA.png=100x20)
