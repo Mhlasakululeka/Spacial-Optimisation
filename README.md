@@ -69,6 +69,6 @@ For a pair of locations, whose indices in the distance matrix are from_node and 
 
 ## running the program
 
-After running the tsp ipython notebook scrip, the main function returns the optimal route in terms of distance and the locations in optimal route pattern. The figure below shows the optimal route pattern. 
+After running the tsp ipython notebook scrip, the main function returns the optimal route in terms of distance and the locations in optimal route pattern. The figure below shows the optimal route pattern.![img](SP.png) 
 
 
