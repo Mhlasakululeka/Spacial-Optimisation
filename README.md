@@ -50,7 +50,9 @@ The data for the problem: the lovcations and the distance matrix, whose entry in
 The instance solver is declared by 
 ```
 routing = pywrapcp.RoutingModel(tsp_size, num_routes, depot)
+# Description of each variable
+   # tsp_size—The number of locations needed to be visited.
+   # num_routes—The number of routes, which is 1 for a TSP.
+   #  depot—The start and end node of the route.
 ```
-    tsp_size—The number of locations needed to be visited.
-    num_routes—The number of routes, which is 1 for a TSP.
-    depot—The start and end node of the route.
+
