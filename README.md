@@ -75,6 +75,6 @@ The travelling salesman simulated results for the optimal route acheive an optim
 
 # Credits
 
-[Google OR-Tools](https://developers.google.com)
+[Google OR-Tools](https://developers.google.com): For stp libraries
 
 [Ant colonies for the travelling salesman problem](https://www.sciencedirect.com/science/article/pii/S0303264797017085)
