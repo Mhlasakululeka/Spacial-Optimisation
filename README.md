@@ -18,13 +18,15 @@ An exhaustive search of all possible paths would be guaranteed to find the short
 The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city ? Wesolve the above mentioned sptial optimisation problem by using this approach
 
 ##  Solving TSPs with OR-Tools
-You can solve TSPs using the OR-Tools [vehicle routing library](https://developers.google.com/optimization/reference/constraint_solver/routing/), a collection of algorithms designed especially for TSPs, and more general problems with multiple vehicles. The routing library is an added layer on top of the [constraint programming](https://developers.google.com/optimization/cp/) solver. See RoutingModel for detailed information about the available methods for setting up and solving routing problems.
+You can solve TSPs using the OR-Tools [vehicle routing library](https://developers.google.com/optimization/reference/constraint_solver/routing/), a collection of algorithms designed especially for TSPs, and more general problems with multiple vehicles. The routing library is an added layer on top of the [constraint programming](https://developers.google.com/optimization/cp/) solver. See [RoutingModel](https://developers.google.com/optimization/reference/constraint_solver/routing/RoutingModel/) for detailed information about the available methods for setting up and solving routing problems.
 ___
 
 
 ## Installation
 ```
-git status
-git add
-git commit
+pip install ortools
 ```
+### The following section represent python program that solves the obove mentioned problem.
+Create the data
+
+The code shown below creates the data for the problem: the cities and the distance matrix, whose entry in row i and column j is the distance from city i to city j in miles.
