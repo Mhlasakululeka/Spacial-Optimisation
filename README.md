@@ -81,7 +81,11 @@ pip install numpy itertools, pip3 install numpy itertools
 If you dont have pip install : check the following site for the installation procedure [pip installation](https://pip.pypa.io/en/stable/installing/)
 
 ## BRANCH AND BOUND ALGORITHMS
+The branch & bound algorithm works as follows: at any node we are faced with the question of whether to "take" a certain object from the list, or not. We need to pick one option (take or not) to calculate fully (by recursively calling the branch and bound function). For the second option we only calculate an upper bound (as shown above) and if that upper bound is lower than the fully calculated option, we know the fully calculated option is better. Otherwise, we need to fully calculate the second option too.
 
+When programming a branch & bound solution, some things to consider are:
+1. Which variables should be at the top of the tree and which at the bottom? (if you can easily prune a large part of the tree at the beginning this reduces computation time)
+2. How do you decide at each node which option to fully calculate and which to bound? (you should prefer calculating the one that is more likely to be better, since that gives you a chance of calculating fully only once)
 
 ## Running the program
 
