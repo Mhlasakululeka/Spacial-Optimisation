@@ -74,7 +74,8 @@ For a pair of locations, whose indices in the distance matrix are from_node and 
 ## Brute Force Algorithm
 To run the ipython notebook (Brute_Force_Algoritm) you need to install the following modules (numpy, itertools). Run the following commands on the terminal to install them (both python2 and python3 user)
 
-```pip install numpy itertools
+```
+pip install numpy itertools
 ```
 If you dont have pip install : check the following site for the installation procedure [pip installation](https://pip.pypa.io/en/stable/installing/)
 
