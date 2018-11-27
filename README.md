@@ -17,6 +17,8 @@ An exhaustive search of all possible paths would be guaranteed to find the short
 ## Travelling Salesman Problem
 The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city ? Wesolve the above mentioned sptial optimisation problem by using this approach
 
+
+
 ##  Solving TSPs with OR-Tools
 You can solve TSPs using the OR-Tools [vehicle routing library](https://developers.google.com/optimization/reference/constraint_solver/routing/), a collection of algorithms designed especially for TSPs, and more general problems with multiple vehicles. The routing library is an added layer on top of the [constraint programming](https://developers.google.com/optimization/cp/) solver. See [RoutingModel](https://developers.google.com/optimization/reference/constraint_solver/routing/RoutingModel/) for detailed information about the available methods for setting up and solving routing problems.
 ___
@@ -27,6 +29,8 @@ ___
 pip install ortools
 ```
 ### The following section represent python program that solves the obove mentioned problem. 
+
+
 
 
 The data for the problem: the lovcations and the distance matrix, whose entry in row i and column j is the distance from location i to location j in km. The figure shows the distance matrix between each location.
@@ -66,6 +70,13 @@ def create_distance_callback(dist_matrix):
   return distance_callback
 ```
 For a pair of locations, whose indices in the distance matrix are from_node and to_node, the callback accepts the two indices and returns the corresponding entry of the distance matrix. This is checke for all the route combinationation for each selected node.
+
+## Brute Force Algorithm
+To run the ipython notebook (Brute_Force_Algoritm) you need to install the following modules (numpy, itertools). Run the following commands on the terminal to install them (both python2 and python3 user)
+
+```pip install numpy itertools
+```
+If you dont have pip install : check the following site for the installation procedure [pip installation](https://pip.pypa.io/en/stable/installing/)
 
 ## Running the program
 
