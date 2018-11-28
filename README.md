@@ -87,6 +87,12 @@ When programming a branch & bound solution, some things to consider are:
 1. Which variables should be at the top of the tree and which at the bottom? (if you can easily prune a large part of the tree at the beginning this reduces computation time)
 2. How do you decide at each node which option to fully calculate and which to bound? (you should prefer calculating the one that is more likely to be better, since that gives you a chance of calculating fully only once)
 
+The ipython noitebook for the brand and bound algorithm is BRAND_AND_BOUND.ipyn
+## Installation
+```
+pip install ortools
+```
+
 ## Running the program
 
 After running the tsp ipython notebook scrip, the main function returns the optimal route in terms of distance and the locations in optimal route pattern. The figure below shows the optimal route pattern.![img](SP.png) 
