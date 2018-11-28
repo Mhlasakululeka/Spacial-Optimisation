@@ -72,13 +72,13 @@ def create_distance_callback(dist_matrix):
 For a pair of locations, whose indices in the distance matrix are from_node and to_node, the callback accepts the two indices and returns the corresponding entry of the distance matrix. This is checke for all the route combinationation for each selected node.
 
 ## Brute Force Algorithm
-To run the ipython notebook (Brute_Force_Algoritm) you need to install the following modules (numpy, itertools). Run the following commands on the terminal to install them (both python2 and python3 user)
+To run the ipython notebook (Brute_Force_Algoritm.ipynb) you need to install the following modules (numpy, itertools). Run the following commands on the terminal to install them (both python2 and python3 user)
 
 python2 , python3 respectively
 ```
 pip install numpy itertools, pip3 install numpy itertools
 ```
-If you dont have pip install : check the following site for the installation procedure [pip installation](https://pip.pypa.io/en/stable/installing/)
+If you dont have pip installed : check the following site for the installation procedure [pip installation](https://pip.pypa.io/en/stable/installing/)
 
 ## BRANCH AND BOUND ALGORITHMS
 The branch & bound algorithm works as follows: at any node we are faced with the question of whether to "take" a certain object from the list, or not. We need to pick one option (take or not) to calculate fully (by recursively calling the branch and bound function). For the second option we only calculate an upper bound (as shown above) and if that upper bound is lower than the fully calculated option, we know the fully calculated option is better. Otherwise, we need to fully calculate the second option too.
@@ -87,11 +87,11 @@ When programming a branch & bound solution, some things to consider are:
 1. Which variables should be at the top of the tree and which at the bottom? (if you can easily prune a large part of the tree at the beginning this reduces computation time)
 2. How do you decide at each node which option to fully calculate and which to bound? (you should prefer calculating the one that is more likely to be better, since that gives you a chance of calculating fully only once)
 
-The ipython noitebook for the brand and bound algorithm is BRAND_AND_BOUND.ipyn
-## Installation
+The ipython noitebook for the brand and bound algorithm is BRAND_AND_BOUND.ipynb.The modelules that need to be installed in python3 in order to run the ipython script are as follow
 ```
-pip install ortools
+pip3 install math copy 
 ```
+If you dont have pip installed : check the following site for the installation procedure [pip installation](https://pip.pypa.io/en/stable/installing/)
 
 ## Running the program
 
